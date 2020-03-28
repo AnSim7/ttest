@@ -8,6 +8,7 @@ apply plugin: 'maven'
 apply plugin: 'maven-publish'
 apply plugin: "com.github.dcendents.android-maven"
 
+
 group = 'https://gitlab.com/nastya_sim'
 version='1.0'
 
@@ -31,7 +32,7 @@ android {
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation fileTree(dir: 'libs', include: ['*.aar', '*.jar'])
     implementation"org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation 'androidx.appcompat:appcompat:1.1.0'
     implementation 'androidx.core:core-ktx:1.2.0'

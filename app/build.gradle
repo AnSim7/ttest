@@ -4,6 +4,10 @@ apply plugin: 'kotlin-android'
 
 apply plugin: 'kotlin-android-extensions'
 
+apply plugin: 'maven'
+
+group = 'https://gitlab.com/nastya_sim'
+
 android {
     compileSdkVersion 29
     buildToolsVersion "29.0.2"
@@ -32,4 +36,5 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test:runner:1.2.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    implementation 'com.github.jitpack:gradle-simple:1.0'
 }
